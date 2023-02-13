@@ -7,21 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="NohSeonah">
   <meta name="description" content="NohSeonah Profile Portfolio">
-  <!-- og 설정 시작 -->
-  <meta name="title" property="og:title" content="NohSeonah Profile Portfolio">
-  <meta name="images" property="og:image" content="./img/meta_img.png">
-  <meta name="description" property="og:description" content="노선아 포트폴리오 웹사이트">
-  <meta name="type" property="og:type" content="article">
-  <!-- og 설정 끝 -->
   <!-- favicon 설정 시작 -->
-
     <link rel="icon" type="image/png" href="./fv/favicon_hj2.png">
     <link rel="icon" type="image/png" href="./fv/favicon_hj3.png">
     <link rel="icon" type="image/png" href="./fv/favicon_hj1.png">
-    <link rel="manifest" href="./fv/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <!-- favicon 설정 끝 -->
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
@@ -29,22 +18,20 @@
   <title>Hyunju's Portfolio</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <span class="back1"></span>
-      <span class="back2"></span>
+  <div class="wrap">
+    <header class="header">
       <nav class="logo-menu-bg-wrap">
-        <div class="container">
+        <div class="inner">
           <div class="logo-menu-wrap">
             <div class="logo">
               <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-              <a href="./index.html" class="hg1024">Portfolio</a>
+              <a href="./index.html" class="logo-text">Portfolio</a>
             </div> <!-- logo -->
   
             <div class="main-menu">
               <ul class="gnb">
-                <li class="hg768"><a class="menu home" href="#!">Intro</a></li>
-                <li class="hg768"><a class="menu about" href="#!">About</a></li>
+                <li class="hg768"><a class="menu home" href="#!">Home</a></li>
+                <li class="hg768"><a class="menu about" href="#!">Profile</a></li>
                 <li class="hg768"><a class="menu skills" href="#!">Skills</a></li>
                 <li class="hg768"><a class="menu portfolio" href="#!">Portfolio</a></li>
                 <li class="mobile">
@@ -60,8 +47,8 @@
 
           <div class="mobile-menu">
             <ul>
-              <li><a class="m-menu m-home" href="#!">Intro</a></li>
-              <li><a class="m-menu m-about" href="#!">About</a></li>
+              <li><a class="m-menu m-home" href="#!">Home</a></li>
+              <li><a class="m-menu m-about" href="#!">Profile</a></li>
               <li><a class="m-menu m-skills" href="#!">Skills</a></li>
               <li><a class="m-menu m-portfolio" href="#!">Portfolio</a></li>
 
@@ -70,9 +57,7 @@
         </div> <!-- container -->
       </nav> <!-- logo-menu-bg-wrap -->
 
-        <div class="container">
-          <div class="line"></div>
-          <div class="line-txt">INTRO</div>
+        <div class="inner">
   
           <div class="contents-wrap header-content-wrap">
             <div class="home-img">
@@ -108,7 +93,7 @@
 
     <main>
       <div class="contents-wrap about-wrap">
-        <div class="container">
+        <div class="inner">
           <svg id="svg-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400px" height="284px" viewBox="0 0 1401 284" version="1.1">
             <g id="surface1">
             <path style=" stroke:none;fill-rule:nonzero;fill:rgb(255, 255, 255);fill-opacity:1;" d="M 707.503906 5.605469 C 663.140625 21.488281 605.699219 69.132812 495.019531 182.171875 C 452.523438 225.613281 410.492188 265.316406 401.621094 270.453125 C 350.25 301.28125 341.84375 265.78125 366.59375 115.375 C 379.203125 39.703125 379.671875 30.828125 373.132812 19.617188 C 367.996094 9.808594 362.390625 6.539062 347.914062 5.605469 C 313.355469 3.269531 245.640625 53.25 112.078125 179.835938 C 69.582031 220.472656 27.085938 258.308594 17.277344 264.847656 C 7.9375 271.386719 0.933594 277.925781 2.335938 279.328125 C 6.070312 283.53125 37.828125 256.441406 120.484375 178.902344 C 249.378906 57.453125 306.820312 14.480469 344.179688 10.277344 C 375.933594 7.007812 377.335938 17.28125 361.457031 112.105469 C 345.578125 206.925781 343.710938 260.644531 356.789062 275.125 C 378.269531 298.949219 403.488281 282.132812 509.03125 175.632812 C 599.628906 83.613281 651.464844 39.238281 693.027344 18.683594 C 755.140625 -12.613281 783.625 8.40625 803.707031 100.894531 C 814.449219 150.40625 820.519531 166.289062 834.0625 177.96875 C 863.484375 203.65625 918.121094 184.507812 1028.800781 110.238281 C 1054.953125 92.488281 1086.242188 76.136719 1100.71875 71.933594 C 1124.535156 64.925781 1127.804688 64.925781 1146.484375 72.402344 C 1159.09375 77.074219 1171.703125 86.414062 1179.640625 97.15625 C 1202.992188 128.921875 1235.683594 149.007812 1278.644531 158.347656 C 1306.199219 163.953125 1394.460938 165.355469 1397.730469 159.75 C 1399.132812 157.882812 1379.984375 156.949219 1355.234375 157.882812 C 1302.929688 159.75 1255.296875 150.875 1225.40625 133.125 C 1215.132812 127.050781 1196.453125 110.238281 1184.777344 96.222656 C 1142.75 47.644531 1110.058594 49.511719 1026 106.03125 C 955.015625 154.144531 896.640625 182.171875 868.621094 182.171875 C 830.792969 182.171875 826.121094 174.699219 803.238281 79.875 C 786.894531 11.210938 757.007812 -11.675781 707.503906 5.605469 Z M 707.503906 5.605469 "/>
@@ -116,8 +101,7 @@
             </svg>
           <div class="flex-box">
             <div class="about-title">
-              <h2>About <span class="hide-me">Me</span></h2>
-              <h2 class="show-me">Me</h2>
+              <h2>Profile <span class="hide-me"></span></h2>
             </div>
             <div class="about-text">
               <table>
@@ -163,7 +147,7 @@
                 </div> <!-- strength-1 -->
                 <div class="strength-2">
                   <p class="eng">Two</p>
-                  <strong><span class="thumbs">👍</span> 기한 엄수! 책임감 있는 마무리</strong>
+                  <strong><span class="thumbs">👍</span> 끊임없이 도전하는 퍼블리셔</strong>
                   <p>
                     마감 기한을 지키기 위해 평소에 계획성 있게 일을 분배하여 진행합니다.
                     이러한 성향을 바탕으로 조별 프로젝트에서 조장을 담당하여 책임감 있게 프로젝트를 마무리지었습니다.
@@ -172,7 +156,7 @@
                 </div>  <!-- strength-2 -->
                 <div class="strength-3">
                   <p class="eng">Three</p>
-                  <strong><span class="thumbs">👍</span> 선후배, 타직군과도 원활한 협업 및 의사소통!</strong>
+                  <strong><span class="thumbs">👍</span> 원활한 협업 및 의사소통!</strong>
                   <p>
                     다른 사람과 협업할 줄 모르고 배울 줄 모르는 사람은 당장에는 성과가 있을지라도 다른 성취를 위해 
                     나아갈 수 없습니다. 타인과 의견을 나누고 도움을 주고받는 것은 제 핵심 가치입니다. 
@@ -186,7 +170,7 @@
       </div> <!-- about-wrap -->
 
       <div class="contents-wrap skills-wrap">
-        <div class="container">
+        <div class="inner">
           <div class="skills-wrap-bg">
             <span class="bg-txt">JAVASCRIPT</span>
             <div class="desc-circle">
@@ -403,7 +387,7 @@
       </div> <!-- skills-wrap -->
 
       <div class="contents-wrap portfolio-wrap">
-        <div class="container">
+        <div class="inner">
           <h2 class="pf-title">Portfolio</h2>
           <p class="sub-title"><span style="color:#ff3399;">let</span> <span style="color: aqua;">portfolio</span> = <span style="color: yellow;">[</span>'Web Page', 'JavaScript', 'React', 'Other Works'<span style="color: yellow;">]</span>;</p>
           
@@ -642,15 +626,15 @@
 
     </main>
 
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="inner">
         <div class="content-sns-wrap">
           <div class="ft-content">
             <img src="./img/logo.png" alt="footer logo">
             <div>Portfolio created by Hyunju Baek</div>
           </div> <!-- ft-content -->
           <div class="ft-sns">
-            <a href="mailto:seonah1996@gmail.com" target="_blank">
+            <a href="mailto:selly1996@naver.com" target="_blank">
               <img 
                 src="./img/email_icon_out.png" 
                 alt="email"
@@ -658,15 +642,8 @@
                 onmouseout="this.src='./img/email_icon_out.png'"
               >
             </a>
-            <a href="https://open.kakao.com/o/sshc0WWe" target="_blank">
-              <img 
-              src="./img/kakaotalk_icon_out.png" 
-              alt="kakaotalk"
-              onmouseover="this.src='./img/kakaotalk_icon.png'"
-              onmouseout="this.src='./img/kakaotalk_icon_out.png'"
-              >
-            </a>
-            <a href="https://github.com/SeonahNoh" target="_blank">
+
+            <a href="https://github.com/BaekHyunju" target="_blank">
               <img 
                 src="./img/github_icon_out.png" 
                 alt="github"

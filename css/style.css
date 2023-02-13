@@ -1,0 +1,170 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Noto Sans KR';
+    color: #222;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+.inner{
+    position:relative;
+    display: block;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap{
+    position: relative;
+    display: block;
+}
+.header{
+    position: relative;
+    display: block;
+}
+.home{
+    position: relative;
+    display: block;
+}
+.profile{
+    position: relative;
+    display: block;
+}
+.portfolio{
+    position: relative;
+    display: block;
+}
+.life{
+    position: relative;
+    display: block;
+}
+.footer{
+    position: relative;
+    display: block;
+}
+
+/* 헤더 */
+.header{
+  background-color: #beaee348 !important;
+    backdrop-filter: blur(1px);
+}
+.logo{
+    background: url(../img/logo.png) no-repeat center;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
+.logo-text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #BEAEE3;
+    position: absolute;
+    bottom: 20px;
+}
+.header-bar{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    
+}
+.logo-bar{
+    position: absolute;
+    left: 0;
+}
+.gnb{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    
+}
+.gnb a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* 비주얼 */
+.home-text{
+    font-size: 70px;
+    font-weight: 700;
+}
+.txt-color{
+    color: #BEAEE3;
+    font-size: 65px;
+}
+.my-name{
+    font-size: 70px;
+    text-decoration: underline #BEAEE3 10px;
+    text-underline-offset: -1.5px;
+}
+.home-text-introduce{
+    margin-top: 50px;
+    height: 400px;
+    line-height: 100px;
+}
+.home-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
