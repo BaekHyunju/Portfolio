@@ -10,7 +10,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 62.5%;
   line-height: 1.5;
-  color: #e67e22;
+  color: #BEAEE3;
 }
 
 ul,
@@ -22,7 +22,7 @@ li {
 a {
   display: block;
   text-decoration: none;
-  color: #e67e22;
+  color: #BEAEE3;
   font-size: 1.8rem;
 }
 
@@ -160,7 +160,7 @@ header .back2 {
   }
 }
 header .back1 {
-  background-color: #f39c12;
+  background-color: #BEAEE3;
 }
 header .back2 {
   background-color: #fff;
@@ -173,9 +173,11 @@ header .logo-menu-bg-wrap {
   top: 0;
   z-index: 999;
   transition: all 500ms linear;
+  background-color: #beaee348 !important;
+
 }
 header .logo-menu-bg-wrap.active {
-  background-color: rgba(249, 206, 140, 0.8);
+  background-color: #beaee3b2;
   backdrop-filter: blur(1px);
 }
 header .logo-menu-bg-wrap.active::after {
@@ -185,7 +187,7 @@ header .logo-menu-bg-wrap.active::after {
   content: "";
   width: 100%;
   height: 1px;
-  box-shadow: inset 0 1px 0 rgba(243, 156, 18, 0.3);
+  box-shadow: inset 0 1px 0 #beaee3b2;
 }
 @media screen and (min-width: 768px) {
   header .logo-menu-bg-wrap {
@@ -230,6 +232,7 @@ header .logo-menu-bg-wrap .logo-menu-wrap .logo a.hg1024 {
 }
 header .logo-menu-bg-wrap .logo-menu-wrap .gnb {
   display: flex;
+  margin-right: 160px;
 }
 header .logo-menu-bg-wrap .logo-menu-wrap .gnb li.hg768 {
   display: none;
@@ -343,12 +346,12 @@ header .line-txt {
   header .line-txt {
     display: block;
     position: absolute;
-    right: 6px;
-    bottom: 200px;
+    right: 0px;
+    bottom: 330px;
     font-size: 5rem;
     padding: 0 0.5rem;
     color: #fff;
-    background-color: #f39c12;
+    background-color: #BEAEE3;
     transform: rotate(90deg);
     opacity: 0;
     animation: opa 1.5s forwards;
@@ -379,7 +382,7 @@ header .header-content-wrap .home-img {
     top: 0;
     display: block;
     height: 96%;
-    background-color: #f39c12;
+    background-color: #BEAEE3;
     width: 0;
     animation: rightmove 500ms forwards;
     animation-delay: 700ms;
@@ -472,7 +475,7 @@ header .header-content-wrap .home-text h1 {
   }
 }
 header .header-content-wrap .home-text h1 div .txt-color {
-  color: #e67e22;
+  color: #BEAEE3;
 }
 header .header-content-wrap .home-text h1 div .txt-color .typing-txt {
   display: inline;
@@ -485,7 +488,7 @@ header .header-content-wrap .home-text h1 div .txt-color .typing-txt::after {
   width: 1px;
   height: 10vw;
   opacity: 1;
-  background-color: #e67e22;
+  background-color: #BEAEE3;
 }
 @media screen and (min-width: 768px) {
   header .header-content-wrap .home-text h1 div .txt-color .typing-txt::after {
@@ -506,7 +509,7 @@ header .header-content-wrap .home-text h1 div .txt-color .typing-txt.active::aft
   opacity: 0;
 }
 header .header-content-wrap .home-text h1 div .my-name {
-  text-decoration: underline #f39c12 10px;
+  text-decoration: underline #BEAEE3 10px;
   text-underline-offset: -1.5px;
 }
 header .header-content-wrap .home-text p {
@@ -514,7 +517,7 @@ header .header-content-wrap .home-text p {
   line-height: 1.8;
 }
 header .header-content-wrap .home-text p .underline {
-  text-decoration: underline #f39c12 4px;
+  text-decoration: underline #BEAEE3 4px;
   text-underline-offset: -1.5px;
 }
 header .header-content-wrap .home-text .notion-btn {
@@ -523,7 +526,7 @@ header .header-content-wrap .home-text .notion-btn {
   display: inline-block;
   padding: 5px 10px;
   border-radius: 1px;
-  border: 1px solid #e67e22;
+  border: 1px solid #BEAEE3;
 }
 
 main {
@@ -681,14 +684,14 @@ main .about-wrap .flex-box .strength-content .sth-123 > div p.eng {
   left: 5px;
   padding-top: 0;
   z-index: -1;
-  color: #f39c12;
+  color: #BEAEE3;
   opacity: 0.8;
   font-size: 3.3rem;
 }
 main .skills-wrap {
   margin-top: 8rem;
   height: 100%;
-  background-color: #f39c12;
+  background-color: #BEAEE3;
 }
 @media screen and (min-width: 768px) {
   main .skills-wrap {
@@ -707,7 +710,7 @@ main .skills-wrap {
 }
 main .skills-wrap .skills-wrap-bg {
   position: relative;
-  background-color: #f39c12;
+  background-color: #BEAEE3;
 }
 main .skills-wrap .skills-wrap-bg .bg-txt {
   position: absolute;
@@ -771,7 +774,7 @@ main .skills-wrap .skills-wrap-bg .desc-circle .line-txt {
     font-size: 5rem;
     padding: 0 0.5rem;
     color: #fff;
-    background-color: #f39c12;
+    background-color: #a88fe2;
     transform: rotate(-90deg);
   }
 }
@@ -867,7 +870,7 @@ main .skills-wrap .skills-wrap-bg .desc-circle .skills-circle-wrap .swiper .swip
   text-align: center;
   font-size: 2rem;
   border-radius: 50%;
-  color: #e67e22;
+  color: #BEAEE3;
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -927,7 +930,7 @@ main .portfolio-wrap {
 main .portfolio-wrap .pf-title {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 6rem;
-  color: #e67e22;
+  color: #BEAEE3;
 }
 @media screen and (min-width: 768px) {
   main .portfolio-wrap .pf-title {
@@ -1042,7 +1045,7 @@ main .portfolio-wrap .pf .pf-desc-link .link a {
   padding: 0.5rem 1rem;
   margin: 3.5rem 0.75rem 7.8rem;
   border-radius: 5px;
-  border: 1px solid #e67e22;
+  border: 1px solid #BEAEE3;
   font-size: 1.6rem;
 }
 main .portfolio-wrap .pf .pf-desc-link .link a:nth-child(2), main .portfolio-wrap .pf .pf-desc-link .link a:nth-child(3) {
