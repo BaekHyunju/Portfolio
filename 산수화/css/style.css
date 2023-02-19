@@ -119,7 +119,8 @@ body {
     background-size: cover;
 
 }
-.logo-bar{
+
+.logo-bar {
     width: 315px;
     height: 100%;
     position: absolute;
@@ -128,11 +129,13 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.logo-text{
+
+.logo-text {
     color: #fff;
     font-size: 25px;
     font-weight: 600;
 }
+
 .nav {
     position: absolute;
     right: 0;
@@ -155,16 +158,34 @@ body {
     padding: 37px 2.0833vw;
 }
 
+/* 메뉴 반응형 */
+@media screen and (max-width:1024px) {
+    .logo-bar {
+        left: 10px;
+    }
+
+    .gnb {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo-text {
+        display: none;
+    }
+}
+
 /* 홈 */
-.home{
+.home {
     position: relative;
     display: block;
     width: 100%;
     height: 100vh;
     background: url(../img/main_backgound.png) no-repeat bottom;
-    
+
 }
-.home-wrap{
+
+.home-wrap {
     width: 66.4063vw;
     min-width: 1000px;
     height: 747px;
@@ -175,13 +196,15 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
 /* 프로필이미지 */
-.home-left{
+.home-left {
     width: 30.7292vw;
     min-width: 400px;
     height: 100%;
 }
-.home-img{
+
+.home-img {
     width: 28.6458vw;
     min-width: 400px;
     height: 707px;
@@ -191,61 +214,75 @@ body {
     top: 20px;
     left: 20px;
 }
-.home-img-line-top, .home-img-line-bottom {
+
+.home-img-line-top,
+.home-img-line-bottom {
     position: absolute;
     width: 28.6458vw;
     min-width: 400px;
     height: 707px;
 }
+
 .home-img-line-top {
     left: -20px;
     top: -20px;
     border: 2px solid #b5cbde;
 }
+
 .home-img-line-bottom {
     right: -20px;
     bottom: -20px;
     border: 2px solid #dae5ee;
 }
+
 /* 소개인사 */
-.home-right{
+.home-right {
     width: 35.6771vw;
     min-width: 495px;
     position: relative;
     padding: 30px 0 0 2.6042vw;
 
 }
+
 .home-text {
     width: 100%;
 }
-.home-text-introduce{
-    font-size: 54px;
+
+.home-text-introduce {
+    font-size: 52px;
     font-weight: 700;
     line-height: 85px;
-    margin: 25px 0 20px 0;
+    margin: 25px 0 25px 0;
     letter-spacing: -3px;
 }
-.txt-hello{
-    font-size: 60px;
+
+.txt-hello {
+    font-size: 58px;
 }
+
 .txt-color {
     color: #b5cbde;
 }
-.my-name{
+
+.my-name {
     text-decoration: underline #b5cbde 10px;
     text-underline-offset: -1px;
 }
-.home-text-introduce-content, .home-text-introduce-promise {
+
+.home-text-introduce-content,
+.home-text-introduce-promise {
     width: 90%;
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
 }
-.underline{
+
+.underline {
     text-decoration: underline #b5cbde 4px;
     text-underline-offset: -0.5px;
 }
-.resume{
+
+.resume {
     width: 120px;
     height: 40px;
     border: 2px solid #a0b8cd;
@@ -257,35 +294,189 @@ body {
     color: #a0b8cd;
     cursor: pointer;
 }
-.resume:hover{
-    background: rgba(255,255,255,0.7);
+
+.resume:hover {
+    background: rgba(255, 255, 255, 0.7);
 
     transition: all ease-in 0.2s;
 }
 
 /* 홈 반응형 */
 @media screen and (max-width:1024px) {
-    
+    .home {
+        position: absolute;
+        top: 110px;
+        width: 100%;
+        height: 1150px;
+        background: url(../img/main_backgound_tab.png) no-repeat bottom;
+    }
+
+    .home-wrap {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 1150px;
+        width: 100vw;
+        min-width: 700px;
+        background-color: rgb(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+
+    }
+
+    .home-left {
+        width: 97.6563vw;
+        height: 100%;
+
+    }
+
+    .home-img {
+        top: 0;
+        width: 93.7500vw;
+        min-width: 650px;
+        height: 550px;
+        background: url(../img/profile_tab.png) no-repeat top;
+        background-size: cover;
+    }
+
+    .home-img-line-top,
+    .home-img-line-bottom {
+        width: 93.7500vw;
+        min-width: 650px;
+        height: 550px;
+        position: absolute;
+
+    }
+
+    .home-img-line-top {
+        left: -10px;
+        top: -10px;
+    }
+
+    .home-img-line-bottom {
+        right: -10px;
+        bottom: -10px;
+    }
+
+    .home-right {
+        width: 100%;
+        padding: 0 2.9297vw;
+    }
+
+    .home-text-introduce {
+        font-size: 50px;
+        letter-spacing: 0;
+        margin: 5px 0 15px 0;
+        line-height: 70px;
+    }
+
+    .txt-hello {
+        font-size: 55px;
+    }
+
+    .home-text-introduce-content,
+    .home-text-introduce-promise {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .home-left {
+        width: 90%;
+        height: 71.6146vw;
+    }
+
+    .home-img {
+        width: 89.8438vw;
+        min-width: 380px;
+        height: 71.6146vw;
+    }
+
+    .home-img-line-top,
+    .home-img-line-bottom {
+        width: 89.8438vw;
+        min-width: 380px;
+        height: 71.6146vw;
+
+    }
+
+    .home-wrap {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        height: 800px;
+        width: 100%;
+        min-width: 380px;
+
+
+    }
+
+    .home-right {
+        width: 89.1927vw;
+        min-width: 400px;
+        height: 500px;
+        padding: 0;
+    }
+
+    .home-text {
+        width: 100%;
+        height: 500px;
+        margin: 0 25px;
+    }
+
+    .home-text-introduce-content,
+    .home-text-introduce-promise {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .home-text-introduce {
+        font-size: 8.4635vw;
+        letter-spacing: -3;
+        margin: 20px 0 20px 0;
+        line-height: 10.4167vw;
+
+    }
+
+    .txt-hello {
+        font-size: 8.4635vw;
+    }
+
+    .home-img-line-top {
+        left: -7px;
+        top: -7px;
+    }
+
+    .home-img-line-bottom {
+        right: -7px;
+        bottom: -7px;
+    }
 }
 
 
 
-
-
 /* 프로필 */
-.profile{
+.profile {
     position: relative;
     display: block;
 }
 
 /* 스킬 */
-.skill{
+.skill {
     position: relative;
     display: block;
 }
 
 /* 포트폴리오 */
-.portfolio{
+.portfolio {
     position: relative;
     display: block;
 }
