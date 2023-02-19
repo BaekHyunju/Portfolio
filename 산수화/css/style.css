@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #282828;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'NanumBarunGothic', 'GmarketSansMedium', 'NanumSquareNeo-Variable';
+    color: #282828;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+    background: #f5f5f5;
+}
+
+/* 공통요소 */
+.inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1275px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 레이아웃 */
+.wrap {
+    position: relative;
+    display: block;
+}
+
+/* 상단 */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 90px;
+    z-index: 9999;
+    background: #b5cbde86;
+}
+
+.header .inner {
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 74px;
+    height: 78px;
+    background: url(../img/logo.png) no-repeat center;
+    background-size: cover;
+
+}
+.logo-bar{
+    width: 315px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-text{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90px;
+}
+
+.gnb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 530px;
+    height: 100%;
+}
+
+.gnb li a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 37px 2.0833vw;
+}
+
+/* 홈 */
+.home{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/main_backgound.png) no-repeat bottom;
+    
+}
+.home-wrap{
+    width: 66.4063vw;
+    min-width: 1000px;
+    height: 747px;
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* 프로필이미지 */
+.home-left{
+    width: 30.7292vw;
+    min-width: 400px;
+    height: 100%;
+}
+.home-img{
+    width: 28.6458vw;
+    min-width: 400px;
+    height: 707px;
+    background: url(../img/profile_web.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.home-img-line-top, .home-img-line-bottom {
+    position: absolute;
+    width: 28.6458vw;
+    min-width: 400px;
+    height: 707px;
+}
+.home-img-line-top {
+    left: -20px;
+    top: -20px;
+    border: 2px solid #b5cbde;
+}
+.home-img-line-bottom {
+    right: -20px;
+    bottom: -20px;
+    border: 2px solid #dae5ee;
+}
+/* 소개인사 */
+.home-right{
+    width: 35.6771vw;
+    min-width: 495px;
+    position: relative;
+    padding: 30px 0 0 2.6042vw;
+
+}
+.home-text {
+    width: 100%;
+}
+.home-text-introduce{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 85px;
+    margin: 25px 0 20px 0;
+    letter-spacing: -3px;
+}
+.txt-hello{
+    font-size: 60px;
+}
+.txt-color {
+    color: #b5cbde;
+}
+.my-name{
+    text-decoration: underline #b5cbde 10px;
+    text-underline-offset: -1px;
+}
+.home-text-introduce-content, .home-text-introduce-promise {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.underline{
+    text-decoration: underline #b5cbde 4px;
+    text-underline-offset: -0.5px;
+}
+.resume{
+    width: 120px;
+    height: 40px;
+    border: 2px solid #a0b8cd;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a0b8cd;
+    cursor: pointer;
+}
+.resume:hover{
+    background: rgba(255,255,255,0.7);
+
+    transition: all ease-in 0.2s;
+}
+
+/* 홈 반응형 */
+@media screen and (max-width:1024px) {
+    
+}
+
+
+
+
+
+/* 프로필 */
+.profile{
+    position: relative;
+    display: block;
+}
+
+/* 스킬 */
+.skill{
+    position: relative;
+    display: block;
+}
+
+/* 포트폴리오 */
+.portfolio{
+    position: relative;
+    display: block;
+}
+
+/* 하단 */
+.footer {
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/* 임시. 지우기 */
+
+.profile,
+.portfolio {
+    display: none;
+}
