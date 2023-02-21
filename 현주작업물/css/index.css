@@ -542,7 +542,6 @@ body {
     bottom: 70px;
     width: 68.1042vw;
     height: 100%;
-    min-width: 1005px;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -550,8 +549,8 @@ body {
 }
 
 .profile-img {
-    width: 180px;
-    height: 232px;
+    width: 200px;
+    height: 258px;
     margin: 70px auto 0;
     background: url(../img/id-photo.jpg) no-repeat center;
     background-size: cover;
@@ -705,6 +704,10 @@ body {
     .profile-txt,
     .profile-img {
         margin-top: 0;
+        width: 19.5313vw;
+        min-width: 180px;
+        height: 25.1953vw;
+        min-height: 232px;
     }
 
     .profile-txt div {
@@ -717,12 +720,15 @@ body {
         margin-left: 100px;
     }
 
-    .external, .certificate {
+    .external,
+    .certificate {
         margin: 5px 0 0 4.3vw;
     }
-    .external{
+
+    .external {
         margin-bottom: 35px;
     }
+
     .certificate {
         display: grid;
     }
@@ -731,7 +737,7 @@ body {
 
 @media screen and (max-width : 768px) {
     .profile-left-content {
-        width: 78.1250vw;
+        width: 91.1458vw;
         min-width: 470px;
         height: 280px;
         grid-template-columns: 0.75fr 1fr;
@@ -739,7 +745,7 @@ body {
 
     .activity {
         width: 600px;
-        height: 630px;
+        height: 580px;
     }
 
     .profile-top {
@@ -752,37 +758,51 @@ body {
         align-items: center;
         */
         display: grid;
-        grid-template-rows: 100px 280px 630px;
+        grid-template-rows: 100px 280px 580px;
 
     }
 
-    .external, .certificate {
-        margin: 0 15px;
+    .external,
+    .certificate {
+        margin: 0 3.9063vw;
     }
-    .external {
-        width: 78.1250vw;
-        min-width: 470px;
-        margin-bottom: 15px;
-    }
+
     .activity {
-        width: 78.1250vw;
+        width: 91.1458vw;
         min-width: 470px;
         border-radius: 30px;
         background: #ffffff70;
         display: grid;
         align-content: center;
-    
-    }
-    .certificate{
-        width: 78.1250vw;
-        min-width: 470px;
-        margin-top: 20px;
-        grid-template-rows: none;
-    }
-    .profile-img{
-        margin: 0 auto;
+
     }
 
+    .external {
+        width: 84.6354vw;
+        min-width: 450px;
+        margin-bottom: 1.9531vw;
+    }
+
+    .certificate {
+        width: 84.6354vw;
+        min-width: 450px;
+        margin-top: 2.6042vw;
+        grid-template-rows: none;
+    }
+
+    .profile-img {
+        margin: 0 auto;
+        width: 23.4375vw;
+        min-width: 150px;
+        height: 30.2083vw;
+        min-height: 193px;
+    }
+
+    .certificate-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 
