@@ -524,6 +524,7 @@ body {
     grid-template-rows: 295px 1fr;
     justify-content: center;
     align-items: stretch;
+    margin-bottom: 15px;
 }
 
 .activity {
@@ -534,7 +535,7 @@ body {
     background: #ffffff70;
     display: grid;
     align-content: center;
-
+    margin-bottom: 15px;
 }
 
 .profile-top {
@@ -551,7 +552,7 @@ body {
 .profile-img {
     width: 200px;
     height: 258px;
-    margin: 70px auto 0;
+    margin: 50px auto 0;
     background: url(../img/id-photo.jpg) no-repeat center;
     background-size: cover;
     border: 1px solid #b5cbde;
@@ -654,11 +655,12 @@ body {
 
     .profile-left-content {
         width: 700px;
-        height: 330px;
+        height: 32.2266vw;
+        min-height: 300px;
         border-radius: 30px;
         background: #ffffff70;
         position: relative;
-        top: 150px;
+        top: 130px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -672,7 +674,7 @@ body {
         border-radius: 30px;
         background: #ffffff70;
         position: relative;
-        top: 150px;
+        top: 130px;
         display: grid;
         align-content: center;
 
@@ -681,7 +683,7 @@ body {
     .profile-top {
         position: relative;
         top: 0;
-        height: 1300px;
+        height: 1200px;
         /*
         display: flex;
         flex-direction: column;
@@ -694,14 +696,13 @@ body {
 
     .section-title {
         position: relative;
-        top: 150px;
+        top: 110px;
         font-size: 90px;
         font-weight: bolder;
         font-family: 'GmarketSansMedium';
         color: #fff;
     }
 
-    .profile-txt,
     .profile-img {
         margin-top: 0;
         width: 19.5313vw;
@@ -709,7 +710,12 @@ body {
         height: 25.1953vw;
         min-height: 232px;
     }
+    .profile-txt{
+        margin-top: 0;
+        width: 34.1797vw;
+        min-width: 180px;
 
+    }
     .profile-txt div {
         display: flex;
         justify-content: start;
@@ -736,6 +742,9 @@ body {
 }
 
 @media screen and (max-width : 768px) {
+    .section-title{
+        top: 110px;
+    }
     .profile-left-content {
         width: 91.1458vw;
         min-width: 470px;
@@ -802,6 +811,11 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .profile-txt{
+        margin-top: 0;
+        width: 45.5729vw;
+        min-width: 260px;
     }
 }
 
