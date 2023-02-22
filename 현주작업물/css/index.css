@@ -94,7 +94,7 @@ body {
     top: 170px;
     left: 0;
     font-size: 90px;
-    font-weight: bolder;
+    font-weight: 700;
     font-family: 'GmarketSansMedium';
     color: #fff;
 }
@@ -704,7 +704,7 @@ body {
         position: relative;
         top: 110px;
         font-size: 90px;
-        font-weight: bolder;
+        font-weight: 700;
         font-family: 'GmarketSansMedium';
         color: #fff;
     }
@@ -877,30 +877,37 @@ svg {
     stroke-dashoffset: 430;
     stroke-linecap: round;
 }
+
 .box1 .percent svg circle {
     stroke-dasharray: 930;
     stroke-dashoffset: 430;
 }
+
 .box2 .percent svg circle {
     stroke-dasharray: 930;
     stroke-dashoffset: 430;
 }
+
 .box3 .percent svg circle {
     stroke-dasharray: 760;
     stroke-dashoffset: 430;
 }
+
 .box4 .percent svg circle {
     stroke-dasharray: 930;
     stroke-dashoffset: 430;
 }
+
 .box5 .percent svg circle {
     stroke-dasharray: 880;
     stroke-dashoffset: 430;
 }
+
 .box6 .percent svg circle {
     stroke-dasharray: 820;
     stroke-dashoffset: 430;
 }
+
 .percent svg circle:nth-child(1) {
     stroke-dasharray: 0;
     stroke: #eee;
@@ -1002,20 +1009,107 @@ svg {
 .portfolio {
     position: relative;
     display: block;
+    width: 100%;
+    height: 100vh;
+    background: #b5cbde;
+    font-family: 'NanumSquareNeo-Variable';
 }
+
+.portfolio-top {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    align-items: end;
+}
+
+.portfolio-img {
+    width: 750px;
+    height: 477px;
+    border-radius: 28px;
+    box-shadow: 0 5px 20px 0px #42414240;
+}
+
+.title-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-subtitle {
+    position: relative;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'GmarketSansMedium';
+    text-align: end;
+    line-height: 45px;
+    font-weight: 300;
+}
+
+.content-box {
+    left: 0;
+
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.portfolio-text {
+    width: 466px;
+    height: 340px;
+    display: grid;
+    grid-template-rows: 75px 265px;
+}
+
+.portfolio-content-text-top {
+    display: flex;
+    width: 465px;
+    height: 125px;
+    align-items: baseline;
+}
+
+.portfolio-content-text-title {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.portfolio-content-text-subtitle {
+    font-size: 22px;
+}
+
+
+.portfolio-content-text-bottom {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+
+.portfolio-content-text-bottom-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.portfolio-content-text-bottom-content {
+    font-size: 18px;
+}
+
+
+
+/* 멜론 작업물 */
+.melon {
+
+    background: url(../img/melon.png);
+}
+
+portfolio-content
 
 /* 하단 */
 .footer {
     position: relative;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
