@@ -197,6 +197,10 @@ body {
     .logo-text {
         display: none;
     }
+    .section-title{
+        font-size: 50px;
+        width: 400px;
+    }
 
 }
 
@@ -688,7 +692,7 @@ body {
 
     .profile-top {
         position: relative;
-        top: 0;
+        top: 30px;
         height: 1200px;
         /*
         display: flex;
@@ -752,6 +756,7 @@ body {
 @media screen and (max-width : 768px) {
     .section-title {
         top: 110px;
+        left: 20px;
     }
 
     .profile-left-content {
@@ -804,7 +809,12 @@ body {
         min-width: 450px;
         margin-bottom: 1.9531vw;
     }
-
+    .external p {
+        font-size: 16px;
+    }
+    .certificate-txt p {
+        font-size: 16px;
+    }
     .certificate {
         width: 84.6354vw;
         min-width: 450px;
@@ -960,6 +970,8 @@ svg {
 
     .skill-top {
         width: 100%;
+        position: absolute;
+        top: 50px;
     }
 
     .skill-blue {
@@ -1000,8 +1012,12 @@ svg {
     .skill-box .text {
         margin-top: 10px;
     }
-
-
+    .skill-blue{
+        left: 20px;
+    }
+    h3 {
+        font-size: 24px;
+    }
 }
 
 
@@ -1234,12 +1250,11 @@ svg {
         position: relative;
     }
     .title-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
     }
 .portfolio-top{
     position: relative;
-    top: 40px;
+    margin-top: 40px;
 }
     .portfolio-img {
         width: 91.1458vw;
@@ -1288,10 +1303,41 @@ svg {
         
     }
     .section-subtitle{
-        margin-left: 29.9479vw;
+
         line-height: 40px;
     }
+        .port {
+        margin-left: 20px;
+    }
+.section-subtitle{
+    margin-right: 20px;
+}
+.portfolio-text{
+    grid-template-rows: 10.4167vw 290px;
+}
+.portfolio-content-text-top{
+    height:13.0208vw ;
+    justify-content: center;
+}
+.high {
+    top: 4.5573vw;
+}
+.portfolio-text {
+    height: 52.7344vw;
+    min-height: 375px;
 
+}
+.portfolio-content-text-title {
+    font-size: 35px;
+
+}
+.portfolio-content-text-subtitle{
+    font-size: 20px;
+}
+.portfolio-content-text-bottom-title{
+    font-size: 18px;
+
+}
 }
 
 
