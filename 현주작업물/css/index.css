@@ -1047,6 +1047,7 @@ svg {
     display: grid;
     grid-template-rows: 350px 1fr;
     align-items: end;
+    margin-bottom: 70px;
 }
 
 .portfolio-img {
