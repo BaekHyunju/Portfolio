@@ -1,5 +1,10 @@
 @charset "utf-8";
-
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 @font-face {
     font-family: 'NanumBarunGothic';
     font-style: normal;
@@ -69,7 +74,7 @@ html {
 }
 
 body {
-    font-family: 'NanumBarunGothic', 'GmarketSansMedium', 'NanumSquareNeo-Variable';
+    font-family: 'NanumBarunGothic', 'Pretendard-Regular', 'GmarketSansMedium', 'NanumSquareNeo-Variable';
     color: #282828;
     font-size: 16px;
     line-height: 1;
@@ -96,7 +101,8 @@ body {
     font-size: 90px;
     font-weight: 700;
     font-family: 'GmarketSansMedium';
-    color: #fff;
+    color: #b5cbde;
+    
 }
 
 .skill-blue {
@@ -121,6 +127,7 @@ body {
     z-index: 9999;
     background: #b5cbde86;
     backdrop-filter: blur(20px);
+    font-family: 'Pretendard-Regular';
 }
 
 .header .inner {
@@ -133,7 +140,7 @@ body {
     display: inline-block;
     width: 74px;
     height: 78px;
-    background: url(../img/logo2.png) no-repeat center;
+    background: url(../img/logo3.png) no-repeat center;
     background-size: cover;
 
 }
@@ -171,8 +178,8 @@ body {
 
 .gnb li a {
     color: #fff;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 23px;
+    font-weight: 500;
     padding: 37px 2.0833vw;
 }
 
@@ -520,7 +527,7 @@ body {
     display: block;
     width: 100%;
     height: 100vh;
-    background: #b5cbde;
+    /* background: #b5cbde; */
 }
 
 .profile-left-content {
@@ -710,7 +717,7 @@ body {
         font-size: 85px;
         font-weight: 700;
         font-family: 'GmarketSansMedium';
-        color: #fff;
+
     }
 
     .profile-img {
@@ -1037,7 +1044,7 @@ svg {
     display: block;
     width: 100%;
     height: 100%;
-    background: #b5cbde;
+    /* background: #b5cbde; */
     font-family: 'NanumSquareNeo-Variable';
 }
 
@@ -1045,7 +1052,7 @@ svg {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 350px 1fr;
+    grid-template-rows: 450px 1fr;
     align-items: end;
     margin-bottom: 70px;
 }
@@ -1063,8 +1070,9 @@ svg {
 }
 
 .section-subtitle {
+    bottom: 30px;
     position: relative;
-    color: #fff;
+    color: #b3c8da;
     font-size: 35px;
     font-family: 'GmarketSansMedium';
     text-align: end;
@@ -1113,7 +1121,7 @@ svg {
 .portfolio-content-text-subtitle {
     font-size: 22px;
     font-weight: 500;
-
+    color: #5f5f5f;
 }
 
 
@@ -1121,6 +1129,7 @@ svg {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     margin-top: 10px;
+    color: #424242;
 }
 
 
@@ -1193,7 +1202,6 @@ svg {
 
 
     .portfolio-content-text-title {
-
         text-align: center;
     }
 
@@ -1336,7 +1344,6 @@ svg {
 }
 .portfolio-content-text-title {
     font-size: 35px;
-
 }
 .portfolio-content-text-subtitle{
     font-size: 20px;
@@ -1358,6 +1365,7 @@ svg {
     width: 100%;
     height: 255px;
     font-family: 'NanumSquareNeo-Variable';
+    background: #b5cbde;
 }
 .footer-box{
     display: flex;
@@ -1375,5 +1383,5 @@ svg {
 .footer-bottom{
     font-size: 16px;
     margin: 10px 0;
-    color: #727272;
+    color: #5f5f5f;
 }
