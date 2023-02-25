@@ -50,3 +50,6 @@ function wait(ms) {
 
 // 초기 실행
 setTimeout(typing, 1500);
+
+
+

@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index copy.css">
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Hyunju's Portfolio</title>
 </head>
 
 <body>
-    <div class="wrap"> 
+    <div class="wrap">
         <!-- 상단 -->
         <header class="header">
             <div class="inner">
@@ -34,13 +37,23 @@
         <section class="home" id="home">
             <div class="inner">
                 <div class="home-wrap">
-                    <div class="home-left">
+                    <div class="home-left" 
+                    data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="700"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
                         <div class="home-img">
                             <div class="home-img-line-top"></div>
                             <div class="home-img-line-bottom"></div>
                         </div>
                     </div>
-                    <div class="home-right">
+                    <div class="home-right"
+                    data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="700"
+                    data-aos-duration="900"
+                    data-aos-easing="ease-in-sine">
                         <div class="home-text">
                             <div class="home-text-introduce">
                                 <div class="txt-hello">안녕하세요!</div>
@@ -68,6 +81,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- //홈 -->
 
@@ -83,7 +97,9 @@
                     <div class="content-box">
                         <div class="profile-box">
 
-                            <div class="profile-left-content">
+                            <div class="profile-left-content" data-aos="flip-right"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                                 <div class="profile-img"></div>
                                 <div class="profile-txt">
                                     <div>
@@ -107,12 +123,14 @@
                                         <span>selly1996@naver.com</span>
                                     </div>
                                     <div>
-                                        <p>Phone</p>
-                                        <span>010-8788-1134</span>
+                                        <p>Kakao ID</p>
+                                        <span>sd142131</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="activity">
+                            <div class="activity" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                                 <div class="external">
                                     <div class="activity-title">대외활동</div>
                                     <div class="external-txt">
@@ -158,8 +176,8 @@
                         </div>
 
                     </div>
-                    <div class="content-box">
-
+                    <!--
+                        <div class="content-box">
                         <div class="skill-container">
                             <div class="skill-box box1">
                                 <div class="percent">
@@ -253,6 +271,144 @@
                             </div>
                         </div>
                     </div>
+                    -->
+                    <div class="content-box">
+                        <div class="skill-container">
+                            <div class="skill-box box1"data-aos="zoom-in" data-aos-duration="1000" >
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="percent front">
+                                            <svg>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h3>
+                                                    90
+                                                    <span>%</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>웹 표준과 웹 접근성을 고려하여 체계적인 퍼블리싱 작업을 할 수 있습니다.</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">HTML</div>
+                                </div>
+                            </div>
+                            <div class="skill-box box2"data-aos="zoom-in" data-aos-duration="1000"data-aos-delay="200">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="percent front">
+                                            <svg>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h3>
+                                                    90
+                                                    <span>%</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>CSS3의 구조와 속성을 이해하며, 자유롭게 배치하고 디자인 할 수 있습니다.</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">CSS</div>
+                                </div>
+                            </div>
+                            <div class="skill-box box3"data-aos="zoom-in" data-aos-duration="1000"data-aos-delay="300">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="percent front">
+                                            <svg>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h3>
+                                                    60
+                                                    <span>%</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>기초적인 자바스크립트 활용이 가능하며, 구글링하여 작업 할 수 있습니다.</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">JS</div>
+                                </div>
+                            </div>
+                            <div class="skill-box box4"data-aos="zoom-in" data-aos-duration="1000"data-aos-delay="400">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="percent front">
+                                            <svg>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h3>
+                                                    90
+                                                    <span>%</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>웹페이지, 상세페이지 등 디자인을 능숙하게 작업 할 수 있습니다.</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">Photoshop</div>
+                                </div>
+                            </div>
+                            <div class="skill-box box5"data-aos="zoom-in" data-aos-duration="1000"data-aos-delay="500">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="percent front">
+                                            <svg>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h3>
+                                                    80
+                                                    <span>%</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>로고디자인, 배너디자인 등 기본적인 툴을 사용하여 작업 할 수 있습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">Illustrator</div>
+                                </div>
+                            </div>
+                            <div class="skill-box box6"data-aos="zoom-in" data-aos-duration="1000"data-aos-delay="600">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="percent front">
+                                            <svg>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                                <circle cx="90" cy="90" r="90"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h3>
+                                                    70
+                                                    <span>%</span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="back">
+                                            <div>기본적인 툴 사용이 가능하고, 프로토타입을 활용하여 작업 할 수 있습니다. </div>
+                                        </div>
+                                    </div>
+                                    <div class="text">Figma</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -272,7 +428,8 @@
                         </div>
                     </div>
                     <div class="content-box">
-                        <div class="portfolio-content">
+                        <div class="portfolio-content"data-aos="fade-up"
+                        data-aos-duration="1000">
                             <div class="portfolio-img melon"></div>
                             <div class="portfolio-text">
                                 <div class="portfolio-content-text-top">
@@ -302,7 +459,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-content">
+                        <div class="portfolio-content"data-aos="fade-up"
+                        data-aos-duration="1000">
                             <div class="portfolio-img usk"></div>
                             <div class="portfolio-text high">
                                 <div class="portfolio-content-text-top long">
@@ -325,13 +483,15 @@
                                     </div>
                                     <div class="portfolio-content-text-bottom-section">
                                         <div class="portfolio-content-text-bottom-title">사용툴</div>
-                                        <div class="portfolio-content-text-bottom-content">포토샵, 일러스트레이터, 피그마, 비주얼 스튜디오 코드
+                                        <div class="portfolio-content-text-bottom-content">포토샵, 일러스트레이터, 피그마, 비주얼 스튜디오
+                                            코드
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-content">
+                        <div class="portfolio-content"data-aos="fade-up"
+                        data-aos-duration="1000">
                             <div class="portfolio-img dosiraktong"></div>
                             <div class="portfolio-text">
                                 <div class="portfolio-content-text-top">
@@ -360,7 +520,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-content">
+                        <div class="portfolio-content"data-aos="fade-up"
+                        data-aos-duration="1000">
                             <div class="portfolio-img pofol"></div>
                             <div class="portfolio-text">
                                 <div class="portfolio-content-text-top">
@@ -418,6 +579,11 @@
     </div>
 
     <script src="js/index.js"></script>
+    <!-- AOS 라이브러리 불러오기-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+    </script>
 </body>
 
 </html>
