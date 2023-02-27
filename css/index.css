@@ -377,7 +377,7 @@ body {
 /* 소개인사 */
 .home-right {
     width: 35.6771vw;
-    min-width: 495px;
+    min-width: 500px;
     position: relative;
     padding: 30px 0 0 2.6042vw;
 
@@ -424,7 +424,7 @@ body {
 }
 
 .resume {
-    width: 120px;
+    width: 140px;
     height: 40px;
     border: 2px solid #b8c4bb;
     font-size: 16px;
@@ -920,19 +920,21 @@ body {
     .profile-top-basic {
         position: relative;
         top: 0;
-        height: 1140px;
+        height: 1070px;
         /*
         display: flex;
         flex-direction: column;
         align-items: center;
         */
         display: grid;
-        grid-template-rows: 240px 580px;
-
+        grid-template-rows: 170px 580px;
+        margin-bottom: 0;
     }
+
 
     .profile-box {
         align-content: stretch;
+        height: 880px;
     }
 
     .external,
@@ -1234,21 +1236,34 @@ svg {
         height: 100%;
 
     }
-
+    .skill-top-basic {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 300px 560px;
+        align-items: end;
+        margin-bottom: 40px;
+    }
+    
     .skill-top-basic {
         width: 100%;
         height: 1070px;
         position: relative;
         top: 0;
-        grid-template-rows: 240px 1fr;
+        grid-template-rows: 170px 800px;
+        margin-bottom: 0;
     }
-
+    .content-box{
+        position: relative;
+    }
     .skill-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        height: 750px;
-        top: 280px;
+        height: 800px;
+        position: absolute;
+        top: 40px;
     }
+
 
     .skill-box {
         width: 200px;
@@ -1448,6 +1463,7 @@ svg {
 
     .long {
         text-align: center;
+        justify-content: space-evenly !important;
     }
 
     .long .portfolio-content-text-title,
@@ -1519,7 +1535,8 @@ svg {
 
     .portfolio-top {
         position: relative;
-        margin-top: 40px;
+        margin-top: 0;
+        grid-template-rows: 42.9688vw 1fr;
     }
 
     .portfolio-img {
