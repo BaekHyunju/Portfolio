@@ -132,7 +132,7 @@ body {
     width: 300px;
     height: 150px;
     background: url(../img/melon-logo.png)no-repeat center;
-    background-size: cover;
+    background-size: contain;
     margin: 0 auto;
 }
 
