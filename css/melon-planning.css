@@ -80,6 +80,7 @@ body {
     background: #eaf2f1;
     height: 100%;
 }
+
 /* 공통요소 */
 .inner {
     position: relative;
@@ -90,21 +91,25 @@ body {
     /* block 요소 가운데 정렬 */
     margin: 0 auto;
 }
+
 @media screen and (max-width:1024px) {
     .inner {
         max-width: 900px;
     }
 }
+
 @media screen and (max-width:768px) {
     .inner {
         max-width: 750px;
     }
 }
+
 /* 레이아웃 */
 .wrap {
     position: relative;
     display: block;
 }
+
 /* 상단 */
 .top {
     position: relative;
@@ -113,6 +118,7 @@ body {
     height: 100%;
 
 }
+
 .top-content {
     width: 500px;
     height: 630px;
@@ -122,6 +128,7 @@ body {
     position: relative;
     top: 110px;
 }
+
 .logo {
     width: 300px;
     height: 150px;
@@ -129,6 +136,7 @@ body {
     background-size: contain;
     margin: 0 auto;
 }
+
 .title {
     font-size: 35px;
     font-weight: 600;
@@ -137,9 +145,11 @@ body {
     color: #2f2f2f;
     font-family: 'NanumSquareNeo-Variable';
 }
+
 .into-btn {
     margin: 50px 0;
 }
+
 .into-btn button {
     /* background: #d2e1f0;
     box-shadow: 0 10px 0 #bbc8d6; */
@@ -159,19 +169,23 @@ body {
     font-weight: 600;
     color: #2f2f2f;
 }
+
 .into-btn button:hover {
     top: 2px;
     box-shadow: 0 8px 0 #c3d4c6;
 }
+
 .into-btn button:active {
     top: 10px;
     box-shadow: none;
 }
+
 /* 계획서 */
 .planning {
     position: relative;
     display: block;
 }
+
 .planning-melon {
     width: 53.3333vw;
     min-width: 1000px;
@@ -180,6 +194,7 @@ body {
     background-size: contain;
     margin: 0 auto;
 }
+
 @media screen and (max-width:1024px) {
     .planning-melon {
         width: 87.8906vw;
@@ -187,6 +202,7 @@ body {
         height: 835.0586vw;
     }
 }
+
 @media screen and (max-width:768px) {
     .top-content {
         width: 330px;
@@ -197,6 +213,7 @@ body {
         position: relative;
         top: 110px;
     }
+
     .planning-melon {
         width: 91.1458vw;
         min-width: 300px;
