@@ -122,11 +122,11 @@ body {
 .top-content {
     width: 500px;
     height: 630px;
-    /* background: rgb(150, 180, 180); */
     text-align: center;
     margin: 0px auto 0px;
     position: relative;
     top: 110px;
+    background: none;
 }
 
 .logo {
