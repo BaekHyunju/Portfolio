@@ -9,6 +9,7 @@
     <!-- AOS 라이브러리 불러오기-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>신입 웹 퍼블리셔 포트폴리오 | 백현주</title>
 </head>
 
@@ -590,6 +591,86 @@
         </section>
         <!-- //포트폴리오 -->
 
+        <!-- 라이프생활 -->
+        <div class="life">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span># 학원 수료식</span>
+                        <img src="img/１.png" alt="학원 수료식날">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 건전한 놀이중</span>
+                        <img src="img/２.png" alt="새해부터 보드게임중">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 크리스마스 파티</span>
+                        <img src="img/３.png" alt="크리스마스 공주놀이">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 간월재 # 산책</span>
+                        <img src="img/４.png" alt="간월재 산책">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 등산하다 만난 # 억새</span>
+                        <img src="img/５.png" alt="앞산 등산">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 배구보러 김천</span>
+                        <img src="img/６.png" alt="배구경기 보러 김천다녀옴">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 맛집 # 인터뷰</span>
+                        <img src="img/７.png" alt="맛집 인터뷰">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 슬기로운 학원생활</span>
+                        <img src="img/８.png" alt="학원생활">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 맛있는거 좋아요</span>
+                        <img src="img/９.png" alt="베이글안에 숨은치아찾기">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 싸이 #흠뻑쇼</span>
+                        <img src="img/10.png" alt="싸이 흠뻑쇼">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 웃음이 많은 편</span>
+                        <img src="img/11.png" alt="카페뿌시기">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 요가</span>
+                        <img src="img/１２.png" alt="요가">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 농구 보러 수원</span>
+                        <img src="img/１３.png" alt="농구 보러 수원다녀옴">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 내가 만든 쿠키~♬</span>
+                        <img src="img/１４.png" alt="마카롱 만들기">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 열정</span>
+                        <img src="img/１５.png" alt="인생샷 건져주려는 열정">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 앞산 정상</span>
+                        <img src="img/１６.png" alt="앞산 등산">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 카페 뿌시기</span>
+                        <img src="img/１７.png" alt="카페 뿌시기">
+                    </div>
+                    <div class="swiper-slide">
+                        <span># 오.운.완.</span>
+                        <img src="img/１８.png" alt="필라테스">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //라이프생활 -->
 
         <!-- 하단 -->
         <footer class="footer">
@@ -609,12 +690,46 @@
 
     </div>
 
-    <script src="js/index.js"></script>
+
     <!-- AOS 라이브러리 불러오기-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
     </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            ovserver: true,
+            observeParents: true,
+            loop: true,
+            loopAdditionalSlides: 1,
+            breakpoints: {
+                300: {
+                    slidesPerView: 1
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 15
+                }
+            }
+        });
+    </script>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
