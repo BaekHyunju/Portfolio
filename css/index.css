@@ -1394,6 +1394,13 @@ svg {
 }
 
 
+/* 해양수산부 작업물 */
+.mof {
+    background: url(../img/mof.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+
 
 
 /* 멜론 작업물 */

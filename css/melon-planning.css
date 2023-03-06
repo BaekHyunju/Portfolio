@@ -188,6 +188,7 @@ body {
 
 .planning-melon {
     width: 53.3333vw;
+    /* 1024 */
     min-width: 1000px;
     height: 506.7188vw;
     background: url(../img/melon-planning.png)no-repeat top;
@@ -198,6 +199,7 @@ body {
 @media screen and (max-width:1024px) {
     .planning-melon {
         width: 87.8906vw;
+        /* 900 */
         min-width: 700px;
         height: 835.0586vw;
     }
@@ -216,6 +218,7 @@ body {
 
     .planning-melon {
         width: 91.1458vw;
+        /* 700 */
         min-width: 300px;
         height: 1266.7969vw;
         background: url(../img/melon-planning-app.png)no-repeat top;
